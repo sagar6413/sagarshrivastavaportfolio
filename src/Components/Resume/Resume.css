@@ -1,0 +1,28 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.resume > .resume-header-line {
+  width: 25%;
+  height: 2px;
+  background-color: #000;
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.resume > .resume-header-line > .resume-header-subLine {
+  width: 25%;
+  height: 10px;
+  background-color: #ff5823;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .resume > .resume-header-line {
+    width: 50%;
+  }
+}

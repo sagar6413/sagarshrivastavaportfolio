@@ -1,0 +1,75 @@
+.resumeEducation {
+  width: 80%;
+  margin: 0 auto;
+}
+.resumeEducation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.resumeEducation-item-text {
+  text-align: left;
+}
+.resumeEducation-item-text > h1 {
+  color: #ff5823;
+  font-size: 1.5rem;
+}
+.resumeEducation-item-text > p {
+  font-weight: 300;
+}
+.resumeEducation-item-text > em {
+  font-weight: bold;
+}
+.resumeEducation-item-year {
+  /* font-size: 1.2rem; */
+  color: aliceblue;
+  background-color: #ff5823;
+  padding: 5px 10px;
+  border-radius: 50px;
+  width: 100px;
+}
+@media screen and (max-width: 768px) {
+  .resumeEducation-item-text > h1 {
+    font-size: 1.2rem;
+  }
+  .resumeEducation-item-text > p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .resumeEducation-item-year {
+    font-size: 0.8rem;
+  }
+  .resumeEducation-item-text > p {
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .resumeEducation-item {
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    align-items: flex-end;
+  }
+  .resumeEducation-item-year {
+    font-size: 0.8rem;
+    /* padding: 4px 8px; */
+    width: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .resumeEducation-item-year {
+    font-size: 0.7rem;
+  }
+  .resumeEducation-item-text > h1 {
+    font-size: 1rem;
+  }
+  .resumeEducation-item-text > p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .resumeEducation-item-year {
+    width: 130px;
+  }
+}

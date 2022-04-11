@@ -1,0 +1,107 @@
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10px;
+  /* height: 10%; */
+  /* min-height: fit-content; */
+  /* background-color: red; */
+}
+.aboutText-Social > a {
+  /* text-decoration: none; */
+  color: aliceblue !important;
+  margin: 0 10px;
+  font-size: 24px;
+}
+.aboutText-Name {
+  font-size: 24px;
+  margin: 10px 0;
+  /* font-weight: bold; */
+}
+.primary-text {
+  color: aliceblue;
+}
+.highlighted-text {
+  color: #ff5823;
+  font-weight: bold;
+}
+.aboutText-Role {
+  font-size: 28px;
+}
+.profile_details-RoleTagLine {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 10px 30px;
+  /* text-align: center; */
+  font-weight: bold;
+  /* display: inline-block; */
+  font-size: 24px;
+  margin: 10px 5px;
+  cursor: pointer;
+
+  border-radius: 150px;
+}
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+  color: aliceblue;
+}
+.btn-primary:hover {
+  background-color: aliceblue;
+  color: #ff5823;
+}
+.highlighted-btn {
+  border: 1px solid #ff5823;
+  background-color: #ff5823;
+  color: aliceblue;
+}
+.highlighted-btn:hover {
+  background-color: aliceblue;
+  color: #ff5823;
+}
+@media screen and (max-width: 1070px) {
+  .aboutText-Role {
+    font-size: 20px;
+  }
+  .profile_details-RoleTagLine {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .aboutText-Role {
+    font-size: 18px;
+  }
+  .profile_details-RoleTagLine {
+    font-size: 15px;
+  }
+  .aboutText-Name {
+    font-size: 20px;
+    /* margin: 10px 0; */
+    /* font-weight: bold; */
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 16px;
+  }
+  .aboutText-Role {
+    font-size: 16px;
+  }
+  .profile_details-RoleTagLine {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn {
+    font-size: 14px;
+  }
+}

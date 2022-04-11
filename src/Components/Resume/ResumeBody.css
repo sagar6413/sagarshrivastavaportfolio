@@ -1,0 +1,110 @@
+.resumeBody-Container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  /* background-color: pink; */
+}
+.resumeBody {
+  margin-top: 50px;
+  width: 50%;
+
+  /* background-color: red; */
+  /* display: flex; */
+  /* flex: 4; */
+}
+.resumeBody-sidebar-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.resumeBody-sidebar-Icon > .resume-Icon {
+  background-color: #24263b;
+  color: aliceblue;
+  padding: 15px 10px;
+  font-size: 30px;
+  margin: 0 0 -1px 0;
+  cursor: pointer;
+}
+
+.resumeBody-sidebar-Text {
+  font-size: 20px;
+  text-align: left;
+  padding: 0 0 0 30px;
+  cursor: pointer;
+}
+.resumeBody-sidebar-content.active > .resumeBody-sidebar-Text {
+  background-color: #24263b;
+  color: aliceblue;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 100%;
+  /* height: 35px; */
+  animation: openup 1s linear;
+}
+.resume-Icon.resume-Icon-education {
+  padding: 15px 12px;
+}
+.resume-Icon.resumeBody-Icon-skills {
+  padding: 15px 15.6px;
+}
+@keyframes openup {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.resumeBody-content {
+  margin-top: 50px;
+  width: 100%;
+  /* display: flex; */
+  /* flex: 6; */
+  /* background-color: yellow; */
+}
+@media screen and (max-width: 1330px) {
+  .resumeBody-Container {
+    justify-content: space-between;
+  }
+
+  .resumeBody-sidebar-Text {
+    font-size: 15px;
+  }
+  .resumeBody-sidebar-Icon > .resume-Icon {
+    font-size: 25px;
+  }
+  .resume-Icon.resumeBody-Icon-skills {
+    padding: 15px 14.85px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .resumeBody-Container {
+    flex-direction: column;
+  }
+  .resumeBody-sidebar-Text {
+    padding: 0 0 0 50px;
+    font-size: 20px;
+  }
+  .resumeBody-sidebar-Icon > .resume-Icon {
+    font-size: 30px;
+  }
+  .resumeBody {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .resumeBody-sidebar-Text {
+    padding: 0 0 0 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .resumeBody-sidebar-Text {
+    font-size: 15px;
+  }
+  .resumeBody-sidebar-Icon > .resume-Icon {
+    font-size: 25px;
+  }
+}
