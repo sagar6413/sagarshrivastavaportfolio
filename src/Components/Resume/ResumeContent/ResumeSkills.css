@@ -1,0 +1,53 @@
+.resumeSkills {
+}
+.resumeSkills-ProgrammingLanguagesIcons {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.resumeSkills-ProgrammingLanguagesIcons > img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.resumeSkills-ProgrammingLanguages > h2 {
+  font-size: 2rem;
+}
+.resumeSkills-icon {
+  /* font-size: 5em; */
+  /* margin: 0 20px; */
+}
+.resumeSkills-logo > h2 {
+  /* color: aliceblue; */
+}
+.resumeSkills-icon.java {
+  /* background: linear-gradient(#04f2ff, #2200ff); */
+  color: rgb(0, 21, 255);
+}
+.resumeSkills-icon.js {
+  color: #f7df1e;
+}
+
+@media screen and (max-width: 768px) {
+  .resumeSkills-ProgrammingLanguagesIcons {
+    padding: 10px;
+  }
+  .resumeSkills-ProgrammingLanguagesIcons > img {
+    width: 60px;
+    height: 60px;
+  }
+  .resumeSkills-ProgrammingLanguages > h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .resumeSkills-ProgrammingLanguagesIcons > img {
+    width: 50px;
+    height: 50px;
+  }
+  .resumeSkills-ProgrammingLanguages > h2 {
+    font-size: 1.2rem;
+  }
+}
